@@ -75,7 +75,7 @@ public class ClientsDao {
 
     public boolean update(Clients client) {
         try {
-            PreparedStatement statement = connection.prepareStatement("UPDATE clients SET name = ? AND age = ? WHERE id = ?");
+            PreparedStatement statement = connection.prepareStatement("UPDATE clients SET name = ?, age = ? WHERE id = ?");
 
             statement.setString(1, client.getName());
             statement.setInt(2, client.getAge());

@@ -26,11 +26,9 @@ public class Main {
                 System.out.print("> ");
 
                 String s = sc.nextLine();
-                Clients client;
+                Clients client = new Clients();
 
                 if ("1".equals(s)) {
-                    client = new Clients();
-
                     System.out.print("Enter name: ");
                     client.setName(sc.next());
                     System.out.print("Enter age: ");
@@ -41,8 +39,6 @@ public class Main {
                     else
                         System.out.println("create failed");
                 } else if ("2".equals(s)) {
-                    client = new Clients();
-
                     System.out.print("Enter id: ");
                     int id = sc.nextInt();
 
@@ -51,8 +47,6 @@ public class Main {
                     else
                         System.out.println("delete failed");
                 } else if ("3".equals(s)) {
-                    client = new Clients();
-
                     System.out.print("Enter id: ");
                     client.setId(sc.nextInt());
                     System.out.print("Enter name: ");
